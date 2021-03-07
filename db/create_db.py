@@ -66,7 +66,7 @@ def create_tables(opt):
 			""" CREATE TABLE IF NOT EXISTS news (
 			id SERIAL PRIMARY KEY,
 			stock_id INTEGER NOT NULL,
-			news_date DATE NOT NULL,
+			news_date TIMESTAMP NOT NULL,
 			headline TEXT NOT NULL,
 			url TEXT NOT NULL,
 			sentiment REAL,
