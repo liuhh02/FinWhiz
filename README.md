@@ -1,4 +1,7 @@
 # FinWhiz
+A data-first approach to simplifying finance and invesment.
+Devpost: https://devpost.com/software/finwhiz-7ab3ug
+
 ## Inspiration
 Financial education is severely lacking among youths. According to a study by FINRA Investor Education Foundation, there is a **clear trend of declining financial literacy** with four in five youths failing a financial literacy quiz. This lack of financial knowledge further extends into adulthood, with 53% of adults being financially anxious.
 
