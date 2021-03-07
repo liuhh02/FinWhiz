@@ -2,6 +2,10 @@
 A data-first approach to simplifying finance and invesment.
 Devpost: https://devpost.com/software/finwhiz-7ab3ug
 
+<p align="center">
+  <img width="600" src="/images/TechStack.png">
+</p>
+
 ## Inspiration
 Financial education is severely lacking among youths. According to a study by FINRA Investor Education Foundation, there is a **clear trend of declining financial literacy** with four in five youths failing a financial literacy quiz. This lack of financial knowledge further extends into adulthood, with 53% of adults being financially anxious.
 
@@ -57,9 +61,6 @@ We used **CockroachCloud**, hosted with **Google Cloud**, to store each company'
 
 When a user queries the database, we retrieve the information from CockroachCloud using **psycopg2** and **SQLAlchemy** and display it on the front-end in a visually-appealing and easy-to-understand manner with **Streamlit**. We use **Plotly** to plot interactive charts and effectively summarize the data and provide immediate actionable insights to users.
 
-<p align="center">
-  <img width="600" src="/images/TechStack.png">
-</p>
 <p align="center">
   <img width="600" src="/images/CockroachCloud.png">
 </p>
