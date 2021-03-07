@@ -39,7 +39,7 @@ def create_tables(opt):
 			stock_id INTEGER NOT NULL,
 			created_date TIMESTAMP NOT NULL,
 			last_updated_date TIMESTAMP NOT NULL,
-			date_price DATE,
+			date_price TIMESTAMP,
 			open_price NUMERIC,
 			high_price NUMERIC,
 			low_price NUMERIC,
