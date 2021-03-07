@@ -28,8 +28,8 @@ def create_tables(opt):
 	if check_db_exists(opt):
 		commands = (""" CREATE TABLE IF NOT EXISTS stock (
 			id SERIAL PRIMARY KEY,
-			ticker TEXT NOT NULL,
-			name TEXT NOT NULL,
+			ticker VARCHAR NOT NULL,
+			name VARCHAR NOT NULL,
 			created_date TIMESTAMP NOT NULL,
 			last_updated_date TIMESTAMP NOT NULL
 			)
@@ -53,22 +53,22 @@ def create_tables(opt):
 			created_date TIMESTAMP NOT NULL,
 			last_updated_date TIMESTAMP NOT NULL,
 			longBusinessSummary TEXT,
-			sector TEXT,
+			sector VARCHAR,
 			sharesOutstanding BIGINT,
 			marketCap BIGINT,
 			forwardPE REAL,
 			dividendYield REAL,
 			beta REAL,
 			previousClose REAL,
-			averageVolume REAL,
+			averageVolume BIGINT,
 			FOREIGN KEY (stock_id) REFERENCES stock(id))
 			""",
 			""" CREATE TABLE IF NOT EXISTS news (
 			id SERIAL PRIMARY KEY,
 			stock_id INTEGER NOT NULL,
 			news_date TIMESTAMP NOT NULL,
-			headline TEXT NOT NULL,
-			url TEXT NOT NULL,
+			headline VARCHAR NOT NULL,
+			url VARCHAR NOT NULL,
 			sentiment REAL,
 			FOREIGN KEY (stock_id) REFERENCES stock(id))
 			"""
