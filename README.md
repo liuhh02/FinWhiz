@@ -1,6 +1,5 @@
 # FinWhiz
 A data-first approach to simplifying finance and invesment.
-Devpost: https://devpost.com/software/finwhiz-7ab3ug
 
 <p align="center">
   <img width="600" src="/images/TechStack.png">
